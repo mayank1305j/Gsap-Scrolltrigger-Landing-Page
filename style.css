@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+}
+
+#main{
+    /* height: 100%; */
+    width: 100%;
+    background-color: #171717;
+    overflow: hidden;
+    position: relative;
+}
+
+#home{
+    position: relative;
+    overflow: auto;
+    font-family: Bandeins Strange Variable;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 60px 0px 60px;
+    mix-blend-mode: difference;
+}
+
+#nav #left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #right i{
+    color: #282828;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.screen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section:nth-child(1){
+    background-color: #171717;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section:nth-child(2){
+    background-color: #171717;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section:nth-child(3){
+    background-color: #171717;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.photu{
+    height: 18.781vw;
+    width: 35vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+}
+
+#one{
+    background-image: url(https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+#two{
+    background-image: url(https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+#three{
+    background-image: url(https://images.unsplash.com/photo-1448301858776-07f780e9c9da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+/* .photu::after{
+    content : '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: tan;
+    mix-blend-mode: color-burn;
+} */
+
+.txt{
+    position: absolute;
+    color: #fff;
+    left: -17%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.txt h1{
+    font-size: 5.469vw;
+    font-weight: 300;
+}
+
+.txt h4{
+    font-weight: 100;
+}
+
+.txt2{
+    position: absolute;
+    top: -15%;
+    left: -40%;
+    color: #fff;
+    text-align: right;
+}
+
+.txt2 h1{
+    font-weight: 100;
+}
+
+.txt2 img{
+    position: absolute;
+    left: 10%;
+    top: 150%;
+    height: 5.469vw;
+}
+
+#second{
+    background-color: #171717;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    font-family: Aeonik;
+    width: 100vw;
+}
+
+#second #text{
+    width: 100vw;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    position: sticky;
+    z-index: 2;
+}
+
+#second #text2{
+    width: 100vw;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    position: sticky;
+    z-index: 2;
+}
+
+#second>h1{
+    color: #fff;
+    font-size: 6.250vw;
+    text-align: right;
+    position: sticky;
+    z-index: 2;
+}
+
+#second #text h1{
+    font-size: 7.813vw;
+    color: #fff;
+    min-width: 800px;
+}
+
+#second #text2 h1{
+    font-size: 6.250vw;
+    color: transparent;
+    min-width: 600px;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 100;
+}
+
+#second img{
+    position: absolute;
+    width: 27.344vw;
+    top: 50%;
+    left: 40%;
+    filter: blur(0px);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    will-change:transform;
+}
+
+#third{
+    background-color: #171717;
+    padding: 0 8vw;
+    height: 100vh;
+    position: relative;
+}
+
+#third h1{
+    text-align: left;
+    font-size: 9.375vw;
+    font-family: Bandeins Strange Variable;
+    color: #fff;
+}
+
+#third #thirdimg{
+    display: inline-block;
+    height :21.875vw;
+    width: 32.813vw;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+#thirdimg video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#fourth{
+    background-color: #171717;
+    padding: 0 8vw;
+    font-family: Aeonik;
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+#fourth h1{
+    font-weight: 100;
+    font-size: 9.375vw;
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+#fourth h2{
+    font-family: Bandeins Strange Variable;
+    font-weight: 100;
+    font-size: 4.250vw;
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.himg:nth-child(4){
+    border-bottom: 1px solid #fff;
+}
+
+.himg{
+    position: relative;
+}
+
+.himg img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30%;
+    height: 19vh;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+#footer{
+    margin-top: 100px;
+    font-family: Bandeins Strange Variable;
+    padding: 0 8vw;
+    color: #fff;
+}
+
+#footer h1{
+    font-size: 7.031vw;
+}
+
+#footer h2{
+    font-size: 1.953vw;
+    margin-top: 10px;
+}
+
+#footer p{
+    margin-top: 5.344vw;
+    font-size: 1.316vw;
+    width: 35%;
+    text-align: left;
+    line-height: 1.944vw;
+}
+
+#companies{
+    margin-top: 2.344vw;
+    display: block;
+    margin-bottom: 12vw;
+}
+
+#companies h3{
+    font-size: 10.906vw;
+    margin-bottom: -1.344vw;
+}
+
+#message{
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background-color : rgb(23, 67, 126);
+    color: #fff;
+    font-family: Bandeins Strange Variable;
+    display: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1.5s;
+}
+
+#message h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10vw;
+    line-height: 11vw;
+}
+
+#message button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    border: none;
+    background-color: #171717;
+    font-size: 5.344vw;
+    padding: 2.344vw;
+    border-radius: 1.953vw;
+}
+
+@media screen and (max-width: 490px){
+
+    /* Home */
+    
+    .photu{
+        height: 58.781vw;
+        width: 75vw;
+    }
+    .txt{
+        top:65%;
+        left: 2%;
+    }
+    .txt2{
+        top: -35%;
+        left: -12%;
+    }
+    .txt2 img{
+        height: 12.469vw;
+    }
+
+    /* Second Screen */
+
+    #second{
+        margin-top: 0px;
+    }
+
+    #second>h1{
+        font-size: 7.250vw;
+    }
+    
+    #second #text h1{
+        font-size: 20.813vw;
+        min-width: 550px;
+    }
+    
+    #second #text2 h1{
+        font-size: 17.250vw;
+        min-width: 450px;
+        font-weight: 900;
+    }
+    
+    #second img{
+        width: 57.344vw;
+        top: 70%;
+        left: 20%;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    }
+
+    /* Third Screen */
+    #third{
+        height: 70vh;
+    }
+
+    #third h1{
+        font-size: 19.375vw;
+    }
+
+    #third #thirdimg{
+        top: 45%;
+        left: 60%;
+    }
+
+    /* Fourth Screen */
+    #fourth h1{
+        font-weight: 400;
+        font-size: 14.375vw;
+    }
+
+    #fourth h2{
+        font-weight: 300;
+        font-size: 8.250vw;
+    }
+
+    #fourth img{
+        display: none;
+    }
+
+    /* Footer */
+    
+    #footer h1{
+        font-size: 13.031vw;
+    }
+
+    #footer h2{
+        font-size: 3.553vw
+    }
+
+    #footer p{
+        margin-top: 20px;
+        font-size: 2.616vw;
+        width: 50vw;
+        text-align: left;
+        line-height: 15px;
+    }
+
+    #companies{
+        margin-top: 2.344vw;
+        display: block;
+        margin-bottom: 15vw;
+    }
+    
+    #companies h3{
+        font-size: 15.906vw;
+        /* margin-top: 4.344vw; */
+    }
+
+  }
